@@ -227,6 +227,10 @@ Requirements:
 1. docker compose version > 1.6.0 (using docker compose version 2)
 Check how to install docker here: https://docs.docker.com/engine/installation/
 ```
+Build the image
+```bash
+docker build -t pokemongo .
+````
 
 Edit the timezone in docker compose file (if any)
 ```bash
