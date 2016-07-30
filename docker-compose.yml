@@ -1,0 +1,15 @@
+version: "2"
+services:
+  pokemongo:
+#    image: python:2.7
+    image: pokemongo
+    container_name: pokemongo
+    hostname: pokemongo
+    working_dir: "/usr/src/myapp"
+    restart: always
+    tty: true
+    environment:
+      - "TZ=Asia/Hong_Kong"
+    volumes:
+      - ".:/usr/src/myapp"    
+    command: "/usr/src/myapp/entry.sh > /usr/src/myapp/output.log"
